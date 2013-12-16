@@ -11,9 +11,9 @@ Simple PHP URL shortener, as used on http://uup.nu
 | 3   | http://www.youtube.com/watch?v=RbtPXFlZlHg | 127.0.0.1 | never |
 
 ## usage
-	```php
+	
 	<?php
-		$url 		= 'http://uup.nu';
+		$url 		= 'http://uup.nu'; // url-shortener project base url
 		$datas 		= 'link='.'http://www.youtube.com/watch?v=v0aRb4rAq0I';
 
 		$ch = curl_init();
@@ -28,7 +28,6 @@ Simple PHP URL shortener, as used on http://uup.nu
 		curl_close($ch);
 		echo $response;
 	?>
-	```
 
 ## dependencies
 
