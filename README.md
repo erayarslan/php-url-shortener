@@ -1,6 +1,6 @@
 # php-url-shortener
 
-Simple PHP URL shortener, as used on http://uup.nu
+Simple PHP URL shortener
 
 # database
 
@@ -13,13 +13,13 @@ Simple PHP URL shortener, as used on http://uup.nu
 ## usage
 	
 	<?php
-		$url 		= 'http://uup.nu'; // url-shortener project base url
+		$url 		= 'host'; // url-shortener project base url
 		$datas 		= 'link='.'http://www.youtube.com/watch?v=v0aRb4rAq0I';
 
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_POST, true);
-		curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.15) Gecko/2008111317 Firefox/3.0.4");
+		curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.15) Gecko/2008111317 Firefox/3.0.4"); // (ex)
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $datas);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_TIMEOUT, 10); 
@@ -36,8 +36,4 @@ Simple PHP URL shortener, as used on http://uup.nu
 ## license
 
 This script is available under the GPL license.
-
-## author
-
-* [Eray Arslan](http://erayarslan.com)
 
